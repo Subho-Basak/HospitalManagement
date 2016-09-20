@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+.wizard {
+    margin: 20px auto;
+    background: #fff;
+}
+
+    .wizard .nav-tabs {
+        position: relative;
+        margin: 40px auto;
+        margin-bottom: 0;
+        border-bottom-color: #e0e0e0;
+    }
+
+    .wizard > div.wizard-inner {
+        position: relative;
+    }
+
+.connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tab {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+span.round-tab i{
+    color:#555555;
+}
+.wizard li.active span.round-tab {
+    background: #fff;
+    border: 2px solid #5bc0de;
+    
+}
+.wizard li.active span.round-tab i{
+    color: #5bc0de;
+}
+
+span.round-tab:hover {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.wizard .nav-tabs > li {
+    width: 25%;
+}
+
+.wizard li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #5bc0de;
+    transition: 0.1s ease-in-out;
+}
+
+.wizard li.active:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #5bc0de;
+}
+
+.wizard .nav-tabs > li a {
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+}
+
+    .wizard .nav-tabs > li a:hover {
+        background: transparent;
+    }
+
+.wizard .tab-pane {
+    position: relative;
+    padding-top: 50px;
+}
+
+.wizard h3 {
+    margin-top: 0;
+}
+
+@media( max-width : 585px ) {
+
+    .wizard {
+        width: 90%;
+        height: auto !important;
+    }
+
+    span.round-tab {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard .nav-tabs > li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+}
+
+</style>
+
+
+</head>
+
+<body>
+<p>&lt;div class=&quot;container&quot;&gt;<br />
+  &lt;div class=&quot;row&quot;&gt;<br />
+  &lt;section&gt;<br />
+  &lt;div class=&quot;wizard&quot;&gt;<br />
+  &lt;div class=&quot;wizard-inner&quot;&gt;<br />
+  &lt;div class=&quot;connecting-line&quot;&gt;&lt;/div&gt;<br />
+  &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;</p>
+<p> &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;<br />
+  &lt;a href=&quot;#step1&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;step1&quot; role=&quot;tab&quot; title=&quot;Step 1&quot;&gt;<br />
+  &lt;span class=&quot;round-tab&quot;&gt;<br />
+  &lt;i class=&quot;glyphicon glyphicon-folder-open&quot;&gt;&lt;/i&gt;<br />
+  &lt;/span&gt;<br />
+  &lt;/a&gt;<br />
+  &lt;/li&gt;</p>
+<p> &lt;li role=&quot;presentation&quot; class=&quot;disabled&quot;&gt;<br />
+  &lt;a href=&quot;#step2&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;step2&quot; role=&quot;tab&quot; title=&quot;Step 2&quot;&gt;<br />
+  &lt;span class=&quot;round-tab&quot;&gt;<br />
+  &lt;i class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/i&gt;<br />
+  &lt;/span&gt;<br />
+  &lt;/a&gt;<br />
+  &lt;/li&gt;<br />
+  &lt;li role=&quot;presentation&quot; class=&quot;disabled&quot;&gt;<br />
+  &lt;a href=&quot;#step3&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;step3&quot; role=&quot;tab&quot; title=&quot;Step 3&quot;&gt;<br />
+  &lt;span class=&quot;round-tab&quot;&gt;<br />
+  &lt;i class=&quot;glyphicon glyphicon-picture&quot;&gt;&lt;/i&gt;<br />
+  &lt;/span&gt;<br />
+  &lt;/a&gt;<br />
+  &lt;/li&gt;</p>
+<p> &lt;li role=&quot;presentation&quot; class=&quot;disabled&quot;&gt;<br />
+  &lt;a href=&quot;#complete&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;complete&quot; role=&quot;tab&quot; title=&quot;Complete&quot;&gt;<br />
+  &lt;span class=&quot;round-tab&quot;&gt;<br />
+  &lt;i class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/i&gt;<br />
+  &lt;/span&gt;<br />
+  &lt;/a&gt;<br />
+  &lt;/li&gt;<br />
+  &lt;/ul&gt;<br />
+  &lt;/div&gt;</p>
+<p> &lt;form role=&quot;form&quot;&gt;<br />
+  &lt;div class=&quot;tab-content&quot;&gt;<br />
+  &lt;div class=&quot;tab-pane active&quot; role=&quot;tabpanel&quot; id=&quot;step1&quot;&gt;<br />
+  &lt;h3&gt;Step 1&lt;/h3&gt;<br />
+  &lt;p&gt;This is step 1&lt;/p&gt;<br />
+  &lt;ul class=&quot;list-inline pull-right&quot;&gt;<br />
+  &lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary next-step&quot;&gt;Save and continue&lt;/button&gt;&lt;/li&gt;<br />
+  &lt;/ul&gt;<br />
+  &lt;/div&gt;<br />
+  &lt;div class=&quot;tab-pane&quot; role=&quot;tabpanel&quot; id=&quot;step2&quot;&gt;<br />
+  &lt;h3&gt;Step 2&lt;/h3&gt;<br />
+  &lt;p&gt;This is step 2&lt;/p&gt;<br />
+  &lt;ul class=&quot;list-inline pull-right&quot;&gt;<br />
+  &lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default prev-step&quot;&gt;Previous&lt;/button&gt;&lt;/li&gt;<br />
+  &lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary next-step&quot;&gt;Save and continue&lt;/button&gt;&lt;/li&gt;<br />
+  &lt;/ul&gt;<br />
+  &lt;/div&gt;<br />
+  &lt;div class=&quot;tab-pane&quot; role=&quot;tabpanel&quot; id=&quot;step3&quot;&gt;<br />
+  &lt;h3&gt;Step 3&lt;/h3&gt;<br />
+  &lt;p&gt;This is step 3&lt;/p&gt;<br />
+  &lt;ul class=&quot;list-inline pull-right&quot;&gt;<br />
+  &lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default prev-step&quot;&gt;Previous&lt;/button&gt;&lt;/li&gt;<br />
+  &lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default next-step&quot;&gt;Skip&lt;/button&gt;&lt;/li&gt;<br />
+  &lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-info-full next-step&quot;&gt;Save and continue&lt;/button&gt;&lt;/li&gt;<br />
+  &lt;/ul&gt;<br />
+  &lt;/div&gt;<br />
+  &lt;div class=&quot;tab-pane&quot; role=&quot;tabpanel&quot; id=&quot;complete&quot;&gt;<br />
+  &lt;h3&gt;Complete&lt;/h3&gt;<br />
+  &lt;p&gt;You have successfully completed all steps.&lt;/p&gt;<br />
+  &lt;/div&gt;<br />
+  &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;<br />
+  &lt;/div&gt;<br />
+  &lt;/form&gt;<br />
+  &lt;/div&gt;<br />
+  &lt;/section&gt;<br />
+  &lt;/div&gt;<br />
+  &lt;/div&gt;</p>
+</body>
+</html>

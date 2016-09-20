@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.navigation {
+	position: absolute;
+	
+	font-family: arial;
+	margin-top: 450px;
+	width: 350px;
+	list-style: none;
+}
+
+.navigation li {
+	background: white;
+	font-size: 15px;
+	margin-top:10px;
+	margin-left: 80px;
+	height:40px;
+}
+.navigation img{
+	margin-top:5px;
+}
+.navigation  li a {
+
+	text-decoration: none;
+	color: #555;
+	cursor:pointer;
+	transition:all 0.5s ease-in-out;
+}
+.navigation li a:hover{
+	color:#676446;
+}
+.appointments {
+	position: absolute;
+	top: 450px;
+	left: 350px;
+	width: 980px;
+	height: 1000px;
+	
+	
+}
+
+.appointments p {
+	color:gray;
+	padding: 30px;
+	font-family: arial;
+	font-size: 25px;
+}
+
+
+
+.newAppointment {
+	width: 100%;
+	border-collapse: collapse;
+	
+}
+
+.newAppointment tr {
+
+	transition: all 0.2s;
+	margin-top:30px;
+	border-bottom:4px solid #eee;
+	background:white;
+	
+}
+
+.newAppointment tr td {
+	font-family: arial;
+	border-bottom: 1px solid #ddd;
+	padding: 28px;
+	
+}
+
+.newAppointment tr td label {
+	
+	font-size: 12px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.newAppointment tr td:nth-child(2) {
+	font-weight: bold;
+	width: 675px;
+}
+
+.newAppointment tr td:nth-child(1) {
+	width: 55px;
+}
+
+.newAppointment tr td:nth-child(3) {
+	color: blue;
+	font-size: 12px;
+	vertical-align: bottom;
+	border-left:1px solid #eee;
+	
+}
+
+
+.newAppointment tr td h4 {
+	font-weight: normal;
+	color: white;
+	width: 55px;
+	height: 55px;
+	display: inline-block;
+	font-size: 30px;
+	text-indent: 18px;
+	text-transform: UpperCase;
+	overflow: hidden;
+	line-height: 180%;
+	letter-spacing: 100px;
+	background: #564;
+	opacity: 0.9;
+}

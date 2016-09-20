@@ -1,0 +1,254 @@
+.navigation {
+	position: absolute;
+	left: 0px;
+	font-family: arial;
+	margin-top: 370px;
+	width: 1200px;
+	list-style: none;
+}
+
+.navigation li {
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 200px;
+	height: 400px;
+}
+
+.fares {
+	position: absolute;
+	left: 220px;
+	top: 750px;
+	right: 220px;
+	height: 400px;
+}
+
+.footer {
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	width: 400px;
+	height: 400px;
+	background: white;
+}
+
+.footer h2 {
+	margin: 20px 50px 50px 20px;
+	font-weight: normal;
+}
+
+.footer textarea {
+	margin-left: 10px;
+	padding: 15px;
+	outline: none;
+	resize: none;
+}
+
+.footer input {
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 80px;
+	height: 30px;
+	background: #555;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.bookform, .searchPanel {
+	position: absolute;
+	top: 100px;
+	right: 50px;
+	width: 400px;
+	border: none;
+	height: 510px;
+	background: #fff;
+	z-index:-1;
+}
+.bookform.active,.searchPanel.active{z-index:0;}
+.bookform input {
+	margin-left: 50px;
+	outline: none;
+	width: 250px;
+	height: 25px;
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+.bookform h3 {
+	font-size: 15px;
+	margin-left: 50px;
+	font-weight: normal;
+}
+
+.wrapper-dropdown-1 {
+	/* Size and position */
+	position: absolute;
+	/* Enable absolute positioning for children and pseudo elements */
+	width: 258px;
+	padding: 8px;
+	margin: 28px 50px auto;
+	background: #999;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	z-index:1;
+
+}
+
+
+.wrapper-dropdown-1:after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	margin-top: -6px;
+	border-width: 6px 0 6px 6px;
+	border-style: solid;
+	border-color: transparent #fff;
+}
+
+.wrapper-dropdown-1 .dropdown {
+	/* Size & position */
+	position: absolute;
+	top: 100%;
+	left: 0; /* Size */
+	right: 0; /* Size */
+	/* Styles */
+	background: #fff;
+	font-weight: normal; /* Overwrites previous font-weight: bold; */
+	/* Hiding */
+	opacity: 0;
+	pointer-events: none;
+}
+.dropdown li{}
+.wrapper-dropdown-1 .dropdown li a {
+	display: block;
+	text-decoration: none;
+	color: #9e9e9e;
+	padding: 10px 20px;
+	font-size: 15px;
+	margin-left:-40px;
+}
+
+/* Hover state */
+.wrapper-dropdown-1 .dropdown li:hover a {
+	background: #f3f8f8;
+}
+
+.wrapper-dropdown-1.active .dropdown {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.wrapper-dropdown-1.active:after {
+	border-color: #9bc7de transparent;
+	border-width: 6px 6px 0 6px;
+	margin-top: -3px;
+}
+
+.wrapper-dropdown-1.active {
+	background: #999;
+}
+
+.confirmbook ,.srch{
+	margin-top: 80px;
+	transition: background 0.4s ease-in-out;
+	background: #555;
+}
+
+.confirmbook:hover ,.srch:hover {
+	background: #222;
+}
+
+.title {
+	position: absolute;
+	top: -120px;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 30px;
+	color: white;
+}
+
+figcaption span {
+	font-size: 12px;
+	color: #bbb;
+}
+
+.tabs {
+	position: absolute;
+	top: 90px;
+	right: 48px;
+	width: 428px;
+	height: 50px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.tabs li {
+	margin-left: 0;
+	padding: 20px 50px 15px 50px;
+	list-style: none;
+	display: inline;
+	background: white;
+	vetical-align: middle;
+	font-size: 15px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.tabs li.active {
+	border-bottom: 2px solid black;
+}
+
+.vehicles {
+	position: absolute;
+	top: 100px;
+	left: 70px;
+	width: 800px;
+	height: 900px;
+	border-collapse: collapse;
+}
+
+.vehicles tr {
+	height: 200px;
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 100px;
+}
+
+.vehicles td {
+	padding: 0px 20px;
+}
+
+.vehicles p {
+	font-size: 20px;
+	color: #666;
+	font-weight: bold;
+}
+
+.vehicles td:nth-child(3) {
+	padding: 20px 60px;
+}
+
+.vehicles span, h5 {
+	font-size: 12px;
+	color: gray;
+}
+
+.searchPanel h3{
+	margin:50px;
+	color:#555;
+	font-weight:normal;
+	
+}
+
+.searchPanel input{
+	margin-left:50px;
+	outline: none;
+	width: 250px;
+	height: 25px;
+	font-size: 12px;
+	padding-left: 20px;
+}

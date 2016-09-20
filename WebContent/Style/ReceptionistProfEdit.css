@@ -1,0 +1,112 @@
+*{
+	margin:0;
+	padding:0;
+}
+.navigation{
+	position:absolute;
+	font-family:arial;
+	font-size:15px;
+	margin:400px 5px;
+	width:1300px;
+	list-style:none;
+	
+}
+.navigation li{
+	width:530px;
+	background:white;
+	padding:20px 57px;
+	cursor:pointer;
+	display:inline;
+margin-left:-4px;
+}
+.navigation li a{
+	text-decoration:none;
+	color:black;
+	width:500px;
+	background:white;
+	padding:20px 50px;
+}
+
+.navigation li.active{
+	border-bottom:5px solid #a3b167;
+}
+
+
+.appointments{
+	position:absolute;
+	top:500px;
+	left:50px;
+	right:50px;
+	height:1000px;
+	background:#eee;
+	border-radius:5px;
+	
+}
+
+.appointments p{
+	border-bottom:4px solid #474811;
+	background:#9d9a35;
+	padding:30px;
+	font-family:arial;
+	font-size:25px;
+}
+.appointments div{
+	position:absolute;
+	top:100px;
+	left:0;
+	width:100%;
+	height:400px;
+	
+	
+}
+.newAppointment{
+	width:97%;
+	margin:25px 10px;
+	border-collapse:collapse;
+	}
+	.newAppointment tr{
+	cursor:pointer;
+	transition:all 0.2s;
+	}
+.newAppointment tr td{
+	font-family:arial;
+	border-bottom:1px solid #ddd;
+	padding:10px;
+}
+.newAppointment tr td label{
+	cursor:pointer;
+	font-size:12px;
+	font-weight:normal;
+	font-style:italic;
+}
+.newAppointment tr td:nth-child(2){
+	font-weight:bold;
+	width:555px;
+}
+.newAppointment tr td:nth-child(1){
+	width:55px;
+	}
+.newAppointment tr td:nth-child(3){
+	color:blue;
+	font-size:13px;
+	vertical-align:top;
+	}
+.newAppointment tr:hover{
+	border-left:5px solid #594;
+	background:#ddd;
+	}
+.newAppointment tr td h4{
+	font-weight:normal;
+	color:white;
+	width:55px;
+	height:55px;
+	display:inline-block;
+	font-size:30px;
+	text-indent:18px;
+	text-transform:UpperCase;
+	overflow:hidden;
+	line-height:180%;
+	letter-spacing:100px;
+	background:#564;
+	opacity:0.9;
+}
